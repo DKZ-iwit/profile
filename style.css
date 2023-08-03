@@ -1,0 +1,173 @@
+body {
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(171, 235, 139) 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+h1, h2, h3 {
+  color: #555;
+    font-family: "Segoe UI Emoji", "Noto Color Emoji", "Helvetica Neue", sans-serif;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+h1 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.circular-image {
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.circular-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.circular-image-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  height: 260px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #e0d18b;
+  border: 5px solid #ffefef;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  max-width: 500px ;
+}
+
+.resized-image {
+  max-width: 250px;
+  max-height: 250px;
+}
+.profile-paragraph {
+  max-width: 500px;
+  word-wrap: break-word;
+  text-align: justify;
+  text-indent: 1.5em;
+  color: #808080;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.social-icons li {
+  margin-right: 10px;
+}
+.social-icons li:last-child {
+  margin-right: 0;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #224974;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #224974;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #1a3555;
+}
+
+.rounded-boxtitle {
+  border-radius: 10px;
+  background-color: #f7f0f0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.rounded-paragraph {
+  border-radius: 10px;
+  background-color: #f7f0f0;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 960px) {
+  .card {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .card {
+    width: 300px;
+  }
+}
